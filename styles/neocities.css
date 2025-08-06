@@ -1,0 +1,316 @@
+/* ==UserStyle==
+@name           Baron (Neocities Theme)
+@namespace      neocities.org/site/levirenn
+@version        1.0.0
+@description    """Dark-mode theme for Neocities"""
+@author         Leviathan
+==/UserStyle== */
+
+@-moz-document url-prefix("https://neocities.org") {
+    :root {
+        /*--red-main: #E932DF;
+        --red-shade: #B11FA8;
+        --red-hover: #D51CCB;
+        --red-hover-shade: #84157D;*/
+        --red-main: var(--b7);
+        --red-shade: var(--b8);
+        --red-hover: var(--b8);
+        --red-hover-shade: var(--b1);
+        --blue-background: #65a0ad;
+        --blue-header: #2e2e2e;
+        --blue-border: #999999;
+        --comment-box: #353535;
+        --footer-text: #5e5b56;
+        --header-sec: #30424b;
+        --header-rid: #2b3c43;
+        --header-end: #354751;
+        --link-visited: #A54299;
+        --link-alternate: #1abc9c;
+        --body-text: white;
+        --col-left: #3A3A3A;
+        --col-con: #0F0F0F;
+        --col-page: #191919;
+        --header-hover: #1e1e1e;
+        --textarea-color: #F3F3F3;
+        
+        --rainbow: linear-gradient(to right, var(--b1), var(--b2), var(--b3), var(--b4), var(--b5), var(--b6), var(--b7), var(--b8));
+        
+        --b1: #FFADAD;
+        --b2: #FFD6A5;
+        --b3: #FDFFB6;
+        --b4: #CAFFBF;
+        --b5: #9BF6FF;
+        --b6: #A0C4FF;
+        --b7: #BDB2FF;
+        --b8: #FFC6FF;
+    }
+    
+    select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+        color: var(--textarea-color); 
+        background-color: black;
+        border: 2px solid #303030;
+    }
+    
+    .logo > a > img,
+    .btn-group,
+    .supporter-badge {
+        filter: grayscale(100%) 
+                invert(100%);
+    }
+    
+    .folder {
+        filter: grayscale(100%);
+    }
+    
+    .fa-list::before, .fa-th {
+        filter: invert(100%);
+    }
+    
+    .news-item.follow .icon {
+        background: #666666;
+    }
+    
+    ::placeholder {
+        color: var(--blue-border) !important; 
+    }
+    
+    .content fieldset {
+        background: transparent;
+    }
+    
+    .interior .header-Outro .stats strong {
+        color: black;
+    }
+    
+    .interior .header-Outro .stats span {
+        color: #B8B8B8;
+    }
+    
+    .news-item {
+        border-top: 1px solid #232323;
+    }
+    
+    .content.misc-page.columns .col-66,
+    .news-item .files,
+    .single-Col,
+    .modal {
+        background: black !important;
+    }
+    
+    .file .title {
+        color: #BBBBBB;
+    }
+    
+    .page,
+    .content-Base {
+        background: var(--col-page);
+    }
+    
+    .content.misc-page {
+        background: var(--col-con);
+    }
+    
+    .interior .header-Outro.with-columns .col-66 {
+        border-right: transparent;
+    }
+    
+    body,
+    .news-item .user,
+    .news-item .comment,
+    .news-item .you,
+    .site-actions a {
+        color: var(--body-text) !important;
+    }
+    
+    .files .header,
+    .modal-header {
+        background: #454545;
+    }
+    
+    body {
+        background: #191919;
+    }
+    
+    .news-item.update .icon {
+        background: #F3F3F3;
+    }
+    
+    .col-left,
+    .single-Col {
+        border-right: 1px solid var(--col-left);
+    }
+    
+    .col-left > .col-66,
+    .single-Col {
+        border-left: 1px solid var(--col-left);
+    }
+    
+    .footer-Outro {
+        background: #D2D2D2;
+        border-top: 1px solid #A7A7A7;
+    }
+    
+    .footer-Base {
+        color: var(--footer-text);
+    }
+    
+    .header-Nav a:hover, 
+    .header-Nav a:visited,
+    .header-Nav a:hover:visited,
+    .header-Nav .dropdown-menu li a:hover,
+    .header-Nav .dropdown-menu li a:visited {
+        background: var(--header-hover);
+    }
+    
+    ::selection {
+        background: var(--red-main);
+    }
+    
+    .header-Nav {
+        background: var(--blue-header);
+        border-bottom: 1px solid var(--blue-border);
+    }
+    
+    .header-Nav .dropdown-menu {
+        background: var(--blue-header);
+    }
+    
+    .header-Nav .dropdown-menu .divider {
+        border-bottom: var(--blue-border);
+    }
+    
+    .misc-page.columns a:visited,
+    .site-url a,
+    a,
+    .fa-heart,
+    .news-item.update .icon {
+        color: var(--red-main);
+    }
+    
+    .theme {
+        color: var(--comment-box);
+    }
+    
+    .header-Nav a:hover > .fa-heart {
+        color: var(--red-main) !important;
+    }
+    
+    a:visited {
+        color: var(--link-visited);
+    }
+    
+    .header-Base {
+        /* background: var(--blue-background); */
+        /* border-bottom: 6px solid  var(--red-main); */
+        background: var(--rainbow);
+        border-bottom: 1px solid var(--blue-border);
+    }
+    
+    .btn-Action {
+        background: -moz-linear-gradient(top, var(--red-main), var(--red-shade));
+        box-shadow: 0 0 6px rgba(255,255,255,0.25);
+    }
+    
+    .btn-Action:hover {
+        background: -moz-linear-gradient(top, var(--red-hover), var(--red-hover-shade));
+    }
+    
+    .post-comment {
+        background: var(--comment-box);
+    }
+    
+    .header-Outro {
+        background: white;
+    }
+    
+    .col h3,
+    .interior .header-Outro .feed-filter a,
+    h2.eps > span,
+    h2.eps,
+    div.col > ul,
+    .breadcrumbs,
+    .breadcrumbs > a > strong,
+    div.col > h1,
+    .text-Label {
+        color: #111111;
+    }
+    
+    .breadcrumbs > a > strong {
+        position: relative;
+        top: 5px;
+    }
+    
+    div.col > ul > li {
+        position: relative;
+        top: 0;
+        line-height: 16px;
+    }
+    
+    div.col > ul > li > a {
+        font-weight: bold;
+        font-size: 12px !important;
+        position: relative;
+        top: 0px !important;
+    }
+    
+    .interior .header-Outro a {
+        color: #333333;
+        font-size: 16px;
+        
+        position: relative;
+        top: -5px;
+    }
+    
+    .news-item.comment .icon {
+        background: var(--comment-box);
+    }
+    
+    .signup-Form .site-display-preview,
+    .content fieldset,
+    .header-Outro .signup-Form {
+        background: transparent !important;
+        box-shadow: 0 0 0 0 transparent;
+    }
+    
+    .interior .header-Outro .screenshot {
+        border: 6px solid black;
+    }
+    
+    .col-33 > h3:nth-child(1),
+    .col-33 > h3:nth-child(5) {
+        color: var(--red-main);
+    }
+    
+    #saveButton, 
+    a.btn-Action:nth-child(1),
+    #shareButton,
+    #settingsButton {
+        position: relative;
+        top: -2px;
+    }
+    
+    #editorUpdates {
+        display: none;
+    }
+}
+@-moz-document url-prefix("https://neocities.org/dashboard") {
+    div.file > div > a {
+        color: white;
+    }
+    
+    .files .list .upload-Boundary.with-instruction {
+        background: transparent;
+    }
+    
+    .files {
+        background: #323232;
+    }
+    
+    .files .list .upload-Boundary {
+        border: 3px dashed #666666;
+    }
+    
+    .breadcrumbs {
+        color: white;
+    }
+}
